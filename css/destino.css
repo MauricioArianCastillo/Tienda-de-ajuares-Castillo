@@ -1,0 +1,97 @@
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+/* codigo con operaciones vistas en clase */
+/* 1er bloque header */
+header {
+  width: 100%;
+  /* operacion aritmetica */ }
+
+.header__imagen {
+  /* condicionales */
+  margin: auto;
+  display: flex;
+  justify-content: center; }
+
+/* 2do bloque Productos */
+.todosLosProductos {
+  width: 100%; }
+
+.todosLosProductos__productos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.todosLosProductos__productos--producto {
+  padding: 15px;
+  margin: 15px;
+  background-color: #f5ccb8;
+  width: 100px;
+  height: 100px;
+  text-align: center; }
+
+/* 3er bloque quienes somos */
+.quienesSomos, .quienesSomos__parrafo {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%; }
+
+.quienesSomos__parrafo {
+  /*  extend  */
+  background-color: #f5ccb8;
+  width: 1000px;
+  padding: 40px;
+  margin: 10px; }
+
+.quienesSomos__titulo {
+  text-align: center; }
+
+/* 4to bloque footer */
+footer {
+  background-color: #f5ccb8;
+  width: 100%;
+  height: 100px;
+  padding: 50px 0 0 0; }
+  footer h5 {
+    font-size: 1rem;
+    font-weight: 250;
+    text-align: center; }
+
+/* -------- */
+/* MENU */
+.centrado {
+  margin: auto;
+  display: flex;
+  justify-content: center; }
+
+/* ------- */
+/* bucle  */
+h1 {
+  text-align: center;
+  color: #f5ccb8;
+  animation-duration: 2s;
+  animation-name: aparecer; }
+
+/* bucle  */
+h2 {
+  text-align: center;
+  color: #f5ccb8;
+  animation-duration: 2s;
+  animation-name: aparecer; }
+
+.textoCentrado {
+  text-align: center; }
+
+/* Efectos */
+.todosLosProductos__productos--producto:hover {
+  transition: 1s;
+  transform: scale(1.25, 1.25); }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/* ------- */
