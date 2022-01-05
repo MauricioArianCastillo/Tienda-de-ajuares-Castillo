@@ -7,6 +7,16 @@ header {
   width: 100%;
   /* operacion aritmetica */ }
 
+.detalleDeProducto h3 {
+  text-align: center; }
+
+.detalleDeProducto p {
+  text-align: center; }
+
+.detalleDeProducto button {
+  display: flex;
+  justify-content: center; }
+
 .header__imagen {
   /* condicionales */
   margin: auto;
@@ -22,6 +32,9 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center; }
+  .todosLosProductos__productos img:hover {
+    transition: 1s;
+    transform: scale(1.05, 1.05); }
 
 .todosLosProductos__productos--producto {
   padding: 15px;

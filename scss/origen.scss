@@ -11,6 +11,20 @@ header{
 
 $posicion:centro;
 
+.detalleDeProducto{
+    h3{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    button{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
 .header__imagen{
     @if $posicion==centro{   /* condicionales */
         margin: auto;
@@ -39,6 +53,10 @@ $posicion:centro;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center; 
+    img:hover{
+        transition: 1s;
+        transform: scale(1.05, 1.05); 
+    }
 }
 
 .todosLosProductos__productos--producto {

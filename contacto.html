@@ -44,29 +44,47 @@
   </nav>
     <h1>Contacto</h1>
     <form action="">
-        <fieldset>
-            <legend> Datos personales </legend>
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre"><br>
-            <label for="email">E-mail:</label>
-            <input type="email" name="email"><br>
-            <label for="telefono">Telefono:</label>
-            <input type="tel" name="telefono"><br>
-            <label for="comentario">Comentario:</label>
-            <textarea name="comentario" id="" cols="30" rows="10"></textarea><br>
-            <label for="paises">¿De que pais sos?</label>
-            <select name="paises" id="">
-                <option value="">Paises</option>
-                <option value="Ar">Argentina</option>
-                <option value="Br">Brasil</option>
-                <option value="Ur">Uruguay</option>
-            </select><br>
-            <label for="condiciones">Acepta terminos y condiciones</label>
-            <input type="checkbox" name="condiciones"><br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Resetear">
-        </fieldset>
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col">Nombre
+            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+          </div>
+          <div class="col">Apellido
+            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">Telefono</label>
+          <input type="tel" class="form-control" id="formGroupExampleInput" placeholder="">
+        </div>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>¿De que pais sos?</option>
+          <option value="Ar">Argentina</option>
+          <option value="Br">Brasil</option>
+          <option value="Ur">Uruguay</option>
+        </select>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Acepta terminos y condiciones
+          </label>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Enviar</button>
+        </div>
+      </div>
     </form>
+    <footer>
+      <h5>©2020 por Empezando a soñar</h5>
+    </footer>
     <!-- Script online js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
